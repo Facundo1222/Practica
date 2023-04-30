@@ -4,17 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Encriptador de Texto!</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <ul>
-            <li>Vagrant</li>
-            <li>Docker</li>
-            <li>Ansible</li>
-            <li>Integración Continua: Madurez y productividad en el desarrollo de software</li>
-        </ul>
+    <div class="container">
+        <div class="logo">
+            <img class="img" src="./fotos/Logo.png" alt="">
+            <h1 class="title">Encriptador de mensajes!</h1>
+        </div>
 
-
-
+    <div class="left">
+        <input class="text-input" id="inputTexto" placeholder="Ingrese el texto aqui!" type="text">
+    </div>
+    <div class="right">
+        <img class="foto-dibujo" id="imgDer" src="./fotos/dibujo-animado-de-personas-buscando-trabajo.png" alt="">
+        <h2 id="texto-subtitulo">ningun mensaje fue encontrado</h2>
+        <textarea id="texto-subtitulo-2" i name="name" cols="80" rows="8">
+            Ingrese el texto que desees encriptar o desencriptar
+        </textarea>
+        <button id="copiar" type="button" onclick="copiar()">Copiar</button>
+    </div>
+    <div class="left-button">
+        <h3>Solo minusculas y sin acentos!</h3>
+        <button type="button" id="btn-encriptar" onclick="encriptar()">Encriptar</button>
+        <button type="button" id="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
+    </div>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
